@@ -9,13 +9,11 @@ private:
     char city[30];
 public:
     Ekipa(int founded=0,char *name="",char *city="") {
-        cout<<"ekipa kons"<<endl;
         this->founded=founded;
         strcpy(this->name,name);
         strcpy(this->city,city);
     }
     Ekipa(const Ekipa &e) {
-        cout<<"Ekipa copy"<<endl;
         this->founded=e.founded;
         strcpy(this->name,e.name);
         strcpy(this->city,e.city);
@@ -39,14 +37,12 @@ private:
     int g_golovi;
 public:
     Natprevar(Ekipa domakin=Ekipa(),Ekipa gostin=Ekipa(),int d_golovi=0,int g_golovi=0) {
-        cout<<"Natprevar konst"<<endl;
         this->domakin=domakin;
         this->gostin=gostin;
         this->d_golovi=d_golovi;
         this->g_golovi=g_golovi;
     }
     Natprevar(const Natprevar &n) {
-        cout<<"copy natprevar"<<endl;
         this->domakin=n.domakin;
         this->gostin=n.gostin;
         this->d_golovi=n.d_golovi;
@@ -97,8 +93,8 @@ int main() {
     Ekipa e2(1880, "FC Barcelona", "Barcelona");
     Natprevar n1(e1, e2, 1, 2);
     Natprevar n2(e2, e1, 1, 0);
-    Ekipa windder=duel(n1,n2);
-    windder.print();
+    Ekipa winner=duel(n1,n2);
+    winner.print();
     return 0;
 }
 

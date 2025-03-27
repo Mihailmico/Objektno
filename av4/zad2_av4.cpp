@@ -28,7 +28,7 @@ public:
 
 
     void print() {
-        cout<<name<<" "<<author;
+        cout<<name<<" "<<author<<endl;
     }
 };
 
@@ -61,7 +61,7 @@ public:
     }
 
     void print() {
-        cout<<name<<" ";
+        cout<<name<<" "<<endl;
         for (int i=0;i<numBooks;i++) {
             books[i].print();
         }
@@ -89,7 +89,7 @@ public:
 
 void checkOutBook(LibraryMember &m, Library &l, int id) {
     if (l.books[id].available) {
-        cout<<m.name<<" "<<"ja zima "<<l.books[id].name;
+        cout<<m.name<<" "<<"ja zima "<<l.books[id].name<<endl;
     }else {
         cout<<"Sorry bro it ain't here"<<endl;
     }

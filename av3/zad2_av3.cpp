@@ -1,6 +1,9 @@
+//
+// Created by User on 27.3.2025.
+//
 #include <iostream>
-#include <cstring>
-using namespace std;
+ #include <cstring>
+ using namespace std;
 
 class Ekipa {
 private:
@@ -47,18 +50,18 @@ public:
         away.print();
     }
 
-     Ekipa gethome() const {
+    Ekipa gethome() const {
         return home;
     }
-     Ekipa getaway() const {
+    Ekipa getaway() const {
         return away;
     }
 
-     int get_home_goals() const {
+    int get_home_goals() const {
         return homeGoals;
     }
 
-     int get_away_goals() const {
+    int get_away_goals() const {
         return awayGoals;
     }
 
